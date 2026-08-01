@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bürgerinitiative Geesthacht – Kein Rechenzentrum neben unserem Wohngebiet</title>
+    <meta name="description" content="Wir sind Anwohner in Geesthacht und setzen uns dafür ein, dass kein Rechenzentrum direkt neben unserem Wohngebiet gebaut wird.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">BI Geesthacht</a>
+        <button class="nav-toggle" onclick="toggleNav()" aria-label="Menü">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="active">Startseite</a></li>
+            <li><a href="auswirkungen.html">Auswirkungen</a></li>
+            <li><a href="fakten.html">Fakten</a></li>
+            <li><a href="ueber-uns.html">Über uns</a></li>
+            <li><a href="dokumente.html">Dokumente</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="hero">
+    <span class="hero-label">Geesthacht · Finkenweg Nord</span>
+    <h1>Wir sind nicht gegen Innovation. Aber ein Rechenzentrum gehört nicht neben ein Wohngebiet.</h1>
+    <p class="hero-sub">
+        Wir sind Anwohner in Geesthacht und informieren über die konkreten Auswirkungen für unser Viertel – und für die ganze Stadt.
+    </p>
+    <p class="hero-note">
+        Diese Seite richtet sich an alle Nachbarinnen und Nachbarn, die betroffen sein werden – auch wenn sie es noch nicht wissen.
+    </p>
+    <a href="auswirkungen.html" class="btn btn-primary">Was bedeutet das für mich?</a>
+    <a href="#vormerken" class="btn btn-outline">Auf dem Laufenden bleiben</a>
+</section>
+
+<!-- FACT HIGHLIGHTS -->
+<section class="section">
+    <div class="container">
+        <p class="section-label">Zahlen, die man kennen muss</p>
+        <h2 class="section-title">Was ein Rechenzentrum dieser Größe bedeutet</h2>
+        <p class="section-intro">
+            Ein Hyperscale-Rechenzentrum mit 100 MW IT-Leistung ist keine gewöhnliche Gewerbeanlage.
+            Die Dimensionen sind kaum vorstellbar – und die Folgen für die Nachbarschaft konkret.
+        </p>
+        <div class="cards">
+            <div class="card">
+                <div class="card-icon">🔊</div>
+                <div class="card-number">&gt; 100 dB</div>
+                <div class="card-title">Dauerlärm durch Kühlung</div>
+                <p>Niederfrequente Geräusche der Kühltürme durchdringen Wände und Fenster – rund um die Uhr. TA Lärm erlaubt nachts nur 40 dB(A) im Wohngebiet.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🌡️</div>
+                <div class="card-number">~100 MW</div>
+                <div class="card-title">Abwärme vor Ort</div>
+                <p>Fast die gesamte erzeugte Wärme wird lokal ausgestoßen – genug, um 150.000 Wohnungen zu heizen. Das Mikroklima im Umfeld verändert sich spürbar.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🏠</div>
+                <div class="card-number">−15 bis −20 %</div>
+                <div class="card-title">Immobilienwert</div>
+                <p>Bei einem Immobilienwert von 600.000 € entspricht das einem Verlust von rund 100.000 €. Betroffen: alle Gebäude im Umkreis von ca. 1 km.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">⚡</div>
+                <div class="card-number">876 Mio. kWh</div>
+                <div class="card-title">Stromverbrauch pro Jahr</div>
+                <p>So viel Strom verbraucht eine Stadt mit bis zu 350.000 Einwohnern. Das wirkt sich direkt auf Preise und Verfügbarkeit in Geesthacht aus.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">💧</div>
+                <div class="card-number">3 Mio. Liter</div>
+                <div class="card-title">Wasserverbrauch täglich</div>
+                <p>Entspricht dem Tagesverbrauch von 20.000 Personen. Wir haben bereits heute mit niedrigem Wasserdruck zu kämpfen.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">📐</div>
+                <div class="card-number">17 Fußballfelder</div>
+                <div class="card-title">Versiegelte Fläche</div>
+                <p>120.000 qm – nahezu vollständig versiegelt. Unser gesamtes Neubaugebiet ist ähnlich groß, hat aber eine Kita und ~300 Wohneinheiten.</p>
+            </div>
+        </div>
+        <a href="fakten.html" class="teaser-link">Alle Fakten und rechtlichen Grundlagen →</a>
+    </div>
+</section>
+
+<!-- BETROFFEN? -->
+<section class="section section-alt">
+    <div class="container">
+        <p class="section-label">Wer ist betroffen?</p>
+        <h2 class="section-title">Das geht uns alle etwas an</h2>
+        <p class="section-intro">Die Auswirkungen sind unterschiedlich je nach Entfernung – aber Geesthacht ist als Ganzes betroffen.</p>
+
+        <div class="tabs">
+            <button class="tab-btn active" onclick="switchTab('tab-nah', this)">Finkenweg Nord &amp; Umgebung</button>
+            <button class="tab-btn" onclick="switchTab('tab-geesthacht', this)">Ganz Geesthacht</button>
+        </div>
+
+        <div class="tab-panel active" id="tab-nah">
+            <div class="impact-grid">
+                <div class="impact-item">
+                    <h3>🔊 Dauerlärm</h3>
+                    <p>Kühlaggregate und Diesel-Notstromgeneratoren laufen 24/7. Niederfrequente Geräusche sind kaum zu dämmen.</p>
+                </div>
+                <div class="impact-item">
+                    <h3>🌡️ Hitze im Sommer</h3>
+                    <p>Die massiven Abwärmemengen beeinflussen das Mikroklima – heiße Sommer werden heißer.</p>
+                </div>
+                <div class="impact-item">
+                    <h3>💡 Lichtverschmutzung</h3>
+                    <p>Sicherheitsbeleuchtung auf 120.000 qm, die gesamte Nacht. Menschen und Tiere werden dauerhaft gestört.</p>
+                </div>
+                <div class="impact-item">
+                    <h3>🏠 Wertverlust</h3>
+                    <p>Gutachten zeigen −15 bis −20 % Wertverlust für Immobilien in unmittelbarer Nähe.</p>
+                </div>
+                <div class="impact-item">
+                    <h3>🚚 Bauphase: 2 Jahre</h3>
+                    <p>Starker Baulärm und enormer LKW-Verkehr während der Bauzeit für Lieferungen und Materialien.</p>
+                </div>
+                <div class="impact-item">
+                    <h3>💧 Niedrigerer Wasserdruck</h3>
+                    <p>3 Mio. Liter Wasserverbrauch pro Tag verschärfen die bereits angespannte Drucksituation.</p>
+                </div>
+            </div>
+            <a href="auswirkungen.html" class="teaser-link">Detaillierte Auswirkungen →</a>
+        </div>
+
+        <div class="tab-panel" id="tab-geesthacht">
+            <div class="impact-grid">
+                <div class="impact-item">
+                    <h3>⚡ Höhere Stromkosten</h3>
+                    <p>876 Mio. kWh zusätzlicher Jahresverbrauch treibt die Preise für alle Geesthachter.</p>
+                </div>
+                <div class="impact-item">
+                    <h3>🚗 Wallboxen eingeschränkt</h3>
+                    <p>Besonders in der neuen Hafencity werden Wallboxen durch Lastenmanagement stark eingeschränkt – weil die nötige Kapazität fehlt.</p>
+                </div>
+                <div class="impact-item">
+                    <h3>💧 Wasserversorgung</h3>
+                    <p>Der enorme Wasserverbrauch belastet das Geesthachter Netz, das ohnehin schon unter Druck steht.</p>
+                </div>
+                <div class="impact-item">
+                    <h3>📉 Kaum wirtschaftlicher Nutzen</h3>
+                    <p>Nur 50–100 Arbeitsplätze, kaum lokale Aufträge, minimale Gewerbesteuer durch Abschreibungen und Zerlegung.</p>
+                </div>
+            </div>
+            <a href="auswirkungen.html" class="teaser-link">Detaillierte Auswirkungen →</a>
+        </div>
+    </div>
+</section>
+
+<!-- WER SIND WIR -->
+<section class="section">
+    <div class="container" style="display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center;">
+        <div>
+            <p class="section-label">Wer wir sind</p>
+            <h2 class="section-title">Anwohner. Eltern. Eigentümer. Nachbarn.</h2>
+            <p style="color:var(--text-muted); margin-bottom:16px;">
+                Wir sind keine professionellen Aktivisten. Wir sind Menschen, die in Geesthacht ein Zuhause aufgebaut haben –
+                und die sich informieren, weil wir die Konsequenzen kennen.
+            </p>
+            <p style="color:var(--text-muted); margin-bottom:24px;">
+                Wir sind weder gegen Fortschritt noch gegen Wirtschaft. Aber wir sind dagegen, dass ein Großprojekt
+                mit massiven Auswirkungen auf unsere Gesundheit, unsere Häuser und unsere Lebensqualität
+                ohne echte Beteiligung der Bevölkerung entschieden wird.
+            </p>
+            <a href="ueber-uns.html" class="btn btn-primary">Wir stellen uns vor</a>
+        </div>
+        <div style="background:linear-gradient(135deg,var(--accent-light),var(--accent)); border-radius:12px; height:260px; display:flex; align-items:center; justify-content:center; font-size:4rem;">
+            🏘️
+        </div>
+    </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter" id="vormerken">
+    <div class="container">
+        <h2>Auf dem Laufenden bleiben</h2>
+        <p>Trag dich ein, um über neue Entwicklungen, Termine und Aktionen informiert zu werden. Kein Spam – nur relevante Updates.</p>
+
+        <!-- MAILCHIMP EMBED: Ersetze diesen Platzhalter mit dem Einbettcode aus deinem Mailchimp-Account -->
+        <!-- Anleitung: Mailchimp → Audience → Signup forms → Embedded forms → Code kopieren und hier einfügen -->
+        <form class="newsletter-form" onsubmit="return false;">
+            <input type="email" placeholder="Deine E-Mail-Adresse" required>
+            <button type="submit" class="btn btn-primary">Vormerken lassen</button>
+        </form>
+        <p class="newsletter-hint">Deine Daten werden vertraulich behandelt und nicht weitergegeben.</p>
+        <!-- ENDE MAILCHIMP PLATZHALTER -->
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>Bürgerinitiative Geesthacht · Finkenweg Nord</p>
+        <p style="margin-top:8px;"><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></p>
+    </div>
+</footer>
+
+<script>
+function toggleNav() {
+    document.getElementById('navLinks').classList.toggle('open');
+}
+function switchTab(id, btn) {
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    btn.classList.add('active');
+}
+</script>
+</body>
+</html>

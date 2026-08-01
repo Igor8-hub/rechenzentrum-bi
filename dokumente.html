@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumente – Bürgerinitiative Geesthacht</title>
+    <meta name="description" content="Flyer, Informationsmaterial und wichtige Dokumente der Bürgerinitiative Geesthacht.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">BI Geesthacht</a>
+        <button class="nav-toggle" onclick="toggleNav()" aria-label="Menü">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="auswirkungen.html">Auswirkungen</a></li>
+            <li><a href="fakten.html">Fakten</a></li>
+            <li><a href="ueber-uns.html">Über uns</a></li>
+            <li><a href="dokumente.html" class="active">Dokumente</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="page-hero">
+    <div class="container">
+        <h1>Dokumente &amp; Flyer</h1>
+        <p>Hier findest du unsere Informationsmaterialien zum Herunterladen – zum Teilen, Ausdrucken und Weitergeben.</p>
+    </div>
+</div>
+
+<section class="section">
+    <div class="container">
+
+        <div class="content-block">
+            <h2>Flyer</h2>
+            <ul class="doc-list">
+                <!-- Platzhalter: Dateinamen und Links bitte ersetzen sobald Flyer hochgeladen -->
+                <li class="doc-item">
+                    <div class="doc-icon">📄</div>
+                    <div class="doc-info">
+                        <h3>Flyer: Kein Rechenzentrum neben unserem Wohngebiet</h3>
+                        <p>Kurzinformation für Anwohner – zum Verteilen in der Nachbarschaft</p>
+                    </div>
+                    <a href="#" class="btn">Download PDF</a>
+                </li>
+                <!-- Weitere Flyer hier einfügen -->
+            </ul>
+        </div>
+
+        <div class="content-block">
+            <h2>Hintergrundinformationen</h2>
+            <ul class="doc-list">
+                <li class="doc-item">
+                    <div class="doc-icon">📋</div>
+                    <div class="doc-info">
+                        <h3>Wichtige Fakten zu Rechenzentren</h3>
+                        <p>Zusammenfassung der wichtigsten Auswirkungen auf Gesundheit, Immobilien und Infrastruktur</p>
+                    </div>
+                    <a href="#" class="btn">Download PDF</a>
+                </li>
+                <li class="doc-item">
+                    <div class="doc-icon">⚖️</div>
+                    <div class="doc-info">
+                        <h3>Rechtliche Grundlagen (B-Plan, TA Lärm, BVerwG)</h3>
+                        <p>Übersicht der relevanten rechtlichen Rahmenbedingungen</p>
+                    </div>
+                    <a href="#" class="btn">Download PDF</a>
+                </li>
+                <!-- Weitere Dokumente hier einfügen -->
+            </ul>
+        </div>
+
+        <div class="content-block">
+            <h2>Öffentliche Planunterlagen</h2>
+            <ul class="doc-list">
+                <li class="doc-item">
+                    <div class="doc-icon">🗺️</div>
+                    <div class="doc-info">
+                        <h3>B-Plan Begründung</h3>
+                        <p>Begründung zum Bebauungsplan unseres Wohngebiets</p>
+                    </div>
+                    <a href="#" class="btn">Download PDF</a>
+                </li>
+                <li class="doc-item">
+                    <div class="doc-icon">🗺️</div>
+                    <div class="doc-info">
+                        <h3>Flächennutzungsplan (Neuaufstellung 2014)</h3>
+                        <p>Aktueller Flächennutzungsplan der Stadt Geesthacht</p>
+                    </div>
+                    <a href="#" class="btn">Download PDF</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<section class="newsletter" id="vormerken">
+    <div class="container">
+        <h2>Neue Dokumente nicht verpassen</h2>
+        <p>Melde dich an, um informiert zu werden, sobald wir neue Unterlagen veröffentlichen.</p>
+        <form class="newsletter-form" onsubmit="return false;">
+            <input type="email" placeholder="Deine E-Mail-Adresse" required>
+            <button type="submit" class="btn btn-primary">Vormerken lassen</button>
+        </form>
+        <p class="newsletter-hint">Deine Daten werden vertraulich behandelt und nicht weitergegeben.</p>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>Bürgerinitiative Geesthacht · Finkenweg Nord</p>
+        <p style="margin-top:8px;"><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></p>
+    </div>
+</footer>
+
+<script>
+function toggleNav() { document.getElementById('navLinks').classList.toggle('open'); }
+</script>
+</body>
+</html>
