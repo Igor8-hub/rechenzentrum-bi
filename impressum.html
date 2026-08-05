@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum – Bürgerinitiative Geesthacht</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">BI Geesthacht</a>
+        <button class="nav-toggle" onclick="toggleNav()" aria-label="Menü">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="auswirkungen.html">Auswirkungen</a></li>
+            <li><a href="fakten.html">Fakten</a></li>
+            <li><a href="ueber-uns.html">Über uns</a></li>
+            <li><a href="dokumente.html">Dokumente</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container" style="max-width:720px;">
+        <h1 class="section-title">Impressum</h1>
+
+        <h2>Angaben gemäß § 5 TMG</h2>
+        <p>
+            Bürgerinitiative Geesthacht – Kein Rechenzentrum neben unserem Wohngebiet<br>
+            vertreten durch: <strong>[Vorname Nachname]</strong> (Sprecher/in)<br>
+            <strong>[Straße Hausnummer]</strong><br>
+            <strong>21502 Geesthacht</strong>
+        </p>
+
+        <h2>Kontakt</h2>
+        <p>
+            E-Mail: <strong>[kontakt@beispiel.de]</strong>
+        </p>
+
+        <h2>Verantwortlich für den Inhalt (V.i.S.d.P.)</h2>
+        <p>
+            <strong>[Vorname Nachname]</strong><br>
+            <strong>[Straße Hausnummer]</strong><br>
+            <strong>21502 Geesthacht</strong>
+        </p>
+
+        <h2>Sprecherkreis</h2>
+        <p>
+            Diese Webseite wird von einer Gruppe engagierter Anwohnerinnen und Anwohner aus Geesthacht betrieben:<br>
+            <strong>[Name 1], [Name 2], [Name 3]</strong> – weitere Mitglieder auf Anfrage.
+        </p>
+
+        <h2>Streitschlichtung</h2>
+        <p>
+            Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
+            <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener">https://ec.europa.eu/consumers/odr/</a>.<br>
+            Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+        </p>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>Bürgerinitiative Geesthacht · Finkenweg Nord</p>
+        <p style="margin-top:8px;"><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></p>
+    </div>
+</footer>
+
+<script>
+function toggleNav() {
+    document.getElementById('navLinks').classList.toggle('open');
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutz – Bürgerinitiative Geesthacht</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">BI Geesthacht</a>
+        <button class="nav-toggle" onclick="toggleNav()" aria-label="Menü">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="auswirkungen.html">Auswirkungen</a></li>
+            <li><a href="fakten.html">Fakten</a></li>
+            <li><a href="ueber-uns.html">Über uns</a></li>
+            <li><a href="dokumente.html">Dokumente</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container" style="max-width:720px;">
+        <h1 class="section-title">Datenschutzerklärung</h1>
+
+        <h2>1. Verantwortlicher</h2>
+        <p>
+            Verantwortlich für die Verarbeitung personenbezogener Daten auf dieser Webseite ist:<br><br>
+            <strong>[Vorname Nachname]</strong><br>
+            <strong>[Straße Hausnummer]</strong><br>
+            <strong>21502 Geesthacht</strong><br>
+            E-Mail: <strong>[kontakt@beispiel.de]</strong>
+        </p>
+
+        <h2>2. Hosting – Cloudflare Pages</h2>
+        <p>
+            Diese Webseite wird über <strong>Cloudflare Pages</strong> (Cloudflare, Inc., 101 Townsend St., San Francisco, CA 94107, USA) gehostet.
+            Beim Aufruf der Seite verarbeitet Cloudflare technisch notwendige Daten wie IP-Adresse, Browsertyp und Zugriffszeit
+            zur Auslieferung der Webseite und zum Schutz vor Missbrauch.
+        </p>
+        <p>
+            Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem sicheren und stabilen Betrieb der Webseite).<br>
+            Datenschutzerklärung Cloudflare: <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">cloudflare.com/privacypolicy</a>
+        </p>
+
+        <h2>3. Cookies</h2>
+        <p>
+            Diese Webseite verwendet keine eigenen Tracking- oder Marketing-Cookies.
+            Cloudflare kann technisch notwendige Cookies setzen (z. B. zur Sicherheit und Lastverteilung).
+            Diese Cookies enthalten keine personenbezogenen Daten und werden nicht für Werbezwecke genutzt.
+        </p>
+
+        <h2>4. Newsletter – Mailchimp</h2>
+        <p>
+            Wenn Sie sich für unseren Newsletter anmelden, wird Ihre E-Mail-Adresse an
+            <strong>Mailchimp</strong> (The Rocket Science Group LLC, 675 Ponce de Leon Ave NE, Suite 5000, Atlanta, GA 30308, USA)
+            übermittelt und dort gespeichert.
+        </p>
+        <p>
+            Ihre Daten werden ausschließlich zum Versand unseres Newsletters genutzt und nicht an Dritte weitergegeben.
+            Sie können den Newsletter jederzeit abbestellen – jede E-Mail enthält einen Abmeldelink.
+        </p>
+        <p>
+            Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).<br>
+            Datenschutzerklärung Mailchimp: <a href="https://mailchimp.com/legal/privacy/" target="_blank" rel="noopener">mailchimp.com/legal/privacy</a>
+        </p>
+
+        <h2>5. Ihre Rechte</h2>
+        <p>Sie haben das Recht auf:</p>
+        <ul style="color:var(--text-muted); padding-left:20px; line-height:1.9;">
+            <li><strong>Auskunft</strong> über die bei uns gespeicherten Daten (Art. 15 DSGVO)</li>
+            <li><strong>Berichtigung</strong> unrichtiger Daten (Art. 16 DSGVO)</li>
+            <li><strong>Löschung</strong> Ihrer Daten (Art. 17 DSGVO)</li>
+            <li><strong>Einschränkung</strong> der Verarbeitung (Art. 18 DSGVO)</li>
+            <li><strong>Widerspruch</strong> gegen die Verarbeitung (Art. 21 DSGVO)</li>
+            <li><strong>Datenübertragbarkeit</strong> (Art. 20 DSGVO)</li>
+        </ul>
+        <p>
+            Zur Ausübung Ihrer Rechte wenden Sie sich bitte per E-Mail an: <strong>[kontakt@beispiel.de]</strong>
+        </p>
+
+        <h2>6. Beschwerderecht bei der Aufsichtsbehörde</h2>
+        <p>
+            Sie haben das Recht, sich bei der zuständigen Datenschutzaufsichtsbehörde zu beschweren:
+        </p>
+        <p>
+            <strong>Unabhängiges Landeszentrum für Datenschutz Schleswig-Holstein (ULD)</strong><br>
+            Holstenstraße 98<br>
+            24103 Kiel<br>
+            <a href="https://www.datenschutzzentrum.de" target="_blank" rel="noopener">www.datenschutzzentrum.de</a>
+        </p>
+
+        <p style="color:var(--text-muted); font-size:0.85rem; margin-top:40px;">
+            Stand: August 2026
+        </p>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>Bürgerinitiative Geesthacht · Finkenweg Nord</p>
+        <p style="margin-top:8px;"><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></p>
+    </div>
+</footer>
+
+<script>
+function toggleNav() {
+    document.getElementById('navLinks').classList.toggle('open');
+}
+</script>
+</body>
+</html>
