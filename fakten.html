@@ -58,13 +58,48 @@
                 <div class="stat-box"><div class="num">100 dB(A)</div><div class="lbl">Diesel-Generator (in 7 m)</div></div>
             </div>
 
-            <p>Als Punktquelle nimmt der Schall von Dieselgeneratoren mit doppelter Entfernung um 6 dB ab. Ausgehend von 100 dB(A) in 7 m ergibt sich:</p>
-            <ul>
-                <li>In 14 m: 94 dB(A)</li>
-                <li>In 112 m: 76 dB(A)</li>
-                <li>In 448 m: 64 dB(A)</li>
-                <li>In ca. 1 km: ~57 dB(A) — noch über dem Tagesgrenzwert (55 dB)</li>
-            </ul>
+            <p>Bei einem 100-MW-Rechenzentrum können 40–100 Dieselgeneratoren zum Einsatz kommen — vergleichbare Anlagen dieser Größe betreiben in der Praxis bis zu 93 Generatoren. Diese sind in der Regel entlang der Gebäudewände aufgestellt. Je nach Anordnung verhält sich die Gesamtanlage physikalisch unterschiedlich: Ein einzelner Generator ist eine Punktquelle (−6 dB pro Verdopplung), eine Reihe von Generatoren entlang einer langen Wand kann sich im Nahbereich wie eine Linienquelle verhalten (−3 dB pro Verdopplung). Ausgehend von 100 dB(A) in 7 m:</p>
+
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:24px; margin:20px 0;">
+                <div>
+                    <p style="font-size:.8rem; font-weight:700; color:var(--text-muted); margin-bottom:8px; text-transform:uppercase; letter-spacing:.05em;">Punktquelle · Fernfeld (−6 dB)</p>
+                    <table style="width:100%; border-collapse:collapse; font-size:.88rem;">
+                        <thead>
+                            <tr style="border-bottom:2px solid var(--border);">
+                                <th style="text-align:left; padding:6px 4px; color:var(--text-muted); font-weight:600;">Entfernung</th>
+                                <th style="text-align:right; padding:6px 4px; color:var(--text-muted); font-weight:600;">Pegel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom:1px solid var(--border);"><td style="padding:6px 4px;">7 m</td><td style="text-align:right; padding:6px 4px;">100 dB(A)</td></tr>
+                            <tr style="border-bottom:1px solid var(--border);"><td style="padding:6px 4px;">14 m</td><td style="text-align:right; padding:6px 4px;">94 dB(A)</td></tr>
+                            <tr style="border-bottom:1px solid var(--border);"><td style="padding:6px 4px;">112 m</td><td style="text-align:right; padding:6px 4px;">76 dB(A)</td></tr>
+                            <tr style="border-bottom:1px solid var(--border);"><td style="padding:6px 4px;">448 m</td><td style="text-align:right; padding:6px 4px;">64 dB(A)</td></tr>
+                            <tr style="color:var(--accent); font-weight:700;"><td style="padding:6px 4px;">~1 km</td><td style="text-align:right; padding:6px 4px;">~57 dB(A) ↑</td></tr>
+                        </tbody>
+                    </table>
+                    <p style="font-size:.75rem; color:var(--text-muted); margin-top:6px;">↑ über Tagesgrenzwert (55 dB)</p>
+                </div>
+                <div>
+                    <p style="font-size:.8rem; font-weight:700; color:var(--text-muted); margin-bottom:8px; text-transform:uppercase; letter-spacing:.05em;">Linienquelle · Nahfeld (−3 dB)</p>
+                    <table style="width:100%; border-collapse:collapse; font-size:.88rem;">
+                        <thead>
+                            <tr style="border-bottom:2px solid var(--border);">
+                                <th style="text-align:left; padding:6px 4px; color:var(--text-muted); font-weight:600;">Entfernung</th>
+                                <th style="text-align:right; padding:6px 4px; color:var(--text-muted); font-weight:600;">Pegel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom:1px solid var(--border);"><td style="padding:6px 4px;">7 m</td><td style="text-align:right; padding:6px 4px;">100 dB(A)</td></tr>
+                            <tr style="border-bottom:1px solid var(--border);"><td style="padding:6px 4px;">14 m</td><td style="text-align:right; padding:6px 4px;">97 dB(A)</td></tr>
+                            <tr style="border-bottom:1px solid var(--border);"><td style="padding:6px 4px;">112 m</td><td style="text-align:right; padding:6px 4px;">88 dB(A)</td></tr>
+                            <tr style="border-bottom:1px solid var(--border);"><td style="padding:6px 4px;">448 m</td><td style="text-align:right; padding:6px 4px;">82 dB(A)</td></tr>
+                            <tr style="color:var(--accent); font-weight:700;"><td style="padding:6px 4px;">~1 km</td><td style="text-align:right; padding:6px 4px;">~79 dB(A) ↑</td></tr>
+                        </tbody>
+                    </table>
+                    <p style="font-size:.75rem; color:var(--text-muted); margin-top:6px;">↑ weit über Tagesgrenzwert (55 dB)</p>
+                </div>
+            </div>
             <div class="highlight-box">
                 Der gesetzliche Nachtgrenzwert von 40 dB(A) wird bei einem Dieselgenerator dieser Stärke selbst in mehreren Kilometern Entfernung theoretisch nicht unterschritten. Bei Anlagen dieser Größe sind die gesetzlichen Grenzwerte kaum einzuhalten.
             </div>
