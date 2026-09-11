@@ -384,8 +384,14 @@ img { max-width: 100%; display: block; }
 /* ── TEAM ────────────────────────────────────────────────── */
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
+}
+@media (max-width: 700px) {
+    .team-grid { grid-template-columns: 1fr; }
+}
+@media (min-width: 701px) and (max-width: 900px) {
+    .team-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 .team-card {
